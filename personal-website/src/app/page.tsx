@@ -4,6 +4,7 @@ const links = {
   email: "mailto:longzc725@gmail.com",
   github: "https://github.com/cz0729zc",
   csdn: "https://blog.csdn.net/m0_74274761",
+  resume: "/zhang-chi-resume.pdf",
 };
 
 const projects = [
@@ -148,6 +149,13 @@ export default function Home() {
               >
                 longzc725@gmail.com
               </a>
+              <a
+                className="inline-flex h-12 items-center justify-center border border-lime-200/70 px-5 text-sm font-semibold text-lime-100 transition hover:bg-lime-200 hover:text-slate-950"
+                href={links.resume}
+                download
+              >
+                下载简历
+              </a>
             </div>
           </div>
 
@@ -283,7 +291,7 @@ export default function Home() {
           <div>
             <p className="text-2xl font-semibold text-white">嵌入式软件开发岗位沟通入口。</p>
             <p className="mt-2 text-slate-400">
-              简历截图已收到；如果后续提供 PDF，我可以继续接入“下载简历”按钮。
+              可通过邮箱联系，也可以直接下载 PDF 简历查看教育经历、实习经历和项目细节。
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
@@ -298,6 +306,13 @@ export default function Home() {
               href={links.github}
             >
               GitHub
+            </a>
+            <a
+              className="inline-flex h-12 items-center justify-center border border-white/15 px-5 text-sm font-semibold text-slate-100 transition hover:border-lime-200 hover:text-lime-100"
+              href={links.resume}
+              download
+            >
+              下载简历
             </a>
           </div>
         </div>
