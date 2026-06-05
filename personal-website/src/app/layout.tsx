@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "张驰 Zhang Chi | Embedded Systems & IoT Developer",
+  title: "张驰 Zhang Chi | 嵌入式软件开发",
   description:
-    "张驰的个人作品集网站，展示嵌入式系统、IoT 节点、SmartTrain-Node、智慧果园灌溉系统和技术文章。",
+    "张驰的个人作品集网站，展示嵌入式软件开发、STM32、ESP32、FreeRTOS、LVGL、SmartTrain-Node 和智慧果园项目。",
 };
 
 export default function RootLayout({
@@ -13,10 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="zh-CN"
-      className="h-full antialiased"
-    >
+    <html lang="zh-CN" className="h-full antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
