@@ -120,16 +120,16 @@ export default function Home() {
         <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_18%,rgba(0,232,255,0.18),transparent_32%),radial-gradient(circle_at_85%_12%,rgba(118,255,164,0.14),transparent_30%),linear-gradient(135deg,#05070d_0%,#0b1020_45%,#07121b_100%)]" />
         <div className="absolute inset-0 -z-10 circuit-grid opacity-70" />
 
-        <nav className="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-white/10 pb-5 text-sm text-slate-300">
+        <nav className="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-white/10 pb-5 text-[15px] text-slate-300">
           <a className="font-semibold tracking-[0.28em] text-cyan-200" href="#">
             ZHANG CHI
           </a>
-          <div className="hidden items-center gap-6 md:flex">
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Stack</a>
-            <a href="#writing">Writing</a>
-            <a href="#contact">Contact</a>
+          <div className="hidden items-center gap-7 font-medium md:flex">
+            <a href="#projects">项目</a>
+            <a href="#experience">经历</a>
+            <a href="#skills">技术栈</a>
+            <a href="#writing">文章</a>
+            <a href="#contact">联系</a>
           </div>
         </nav>
 
@@ -301,7 +301,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Writing</p>
-            <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">文章标题直接对应问题，让读者一眼知道你解决过什么。</h2>
+            <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">记录 LVGL 移植、屏幕驱动和 I2S 音频调试中的真实问题。</h2>
           </div>
           <div className="grid gap-3">
             {writings.map((item) => (
